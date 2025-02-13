@@ -1,7 +1,7 @@
 # Pytest Test Comparison Script
 
 This script compares the results of two pytest runs before and after applying a patch. 
-It identifies tests that passed before and after the fix, and tests that failed after the patch.
+It identifies and lists tests that passed before and after the fix, and tests that failed after the patch.
 
 ## Usage
 
