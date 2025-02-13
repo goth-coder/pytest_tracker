@@ -1,6 +1,7 @@
 # Pytest Test Comparison Script
 
-This script compares the results of two pytest runs before and after applying a patch. It identifies tests that passed before but failed after the patch.
+This script compares the results of two pytest runs before and after applying a patch. 
+It identifies tests that passed before and after the fix, and tests that failed after the patch.
 
 ## Usage
 
@@ -25,23 +26,21 @@ pytest -rp --continue-on-collection-errors > pytest_output_after.txt
 Execute the script by specifying the directory where the test result files are located:
 
 ```sh
-python tests_selector.py <directory>
+python -m pytest_tracker <directory>
 ```
 
 For example:
 
 ```sh
-python tests_selector.py seaborn
+python -m pytest_tracker seaborn
 ```
+
+Obs. Make sure you are in the same directory level as the `pytest_tracker` folder before running the command.
 
 ## Output
 
 - `broken_tests.txt`: Lists tests that passed before but failed after applying the patch.
 - `passed_tests.txt`: Lists tests that passed after applying the patch.
-
-## Requirements
-- Python 3
-- `pytest`
 
 ## License
 This project is licensed under the MIT License.
