@@ -40,7 +40,7 @@ Obs. Make sure you are in the same directory level as the `pytest_tracker` folde
 ## Output
 
 - `broken_tests.txt`: Lists tests that passed before but failed after applying the patch.
-- `passed_tests.txt`: Lists tests that passed after applying the patch.
+- `passed_tests.txt`: Lists tests that passed both before and after applying the patch.
 
 ## License
 This project is licensed under the MIT License.
